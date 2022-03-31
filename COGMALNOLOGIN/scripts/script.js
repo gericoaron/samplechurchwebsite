@@ -26,3 +26,8 @@ $('nav ul').toggleClass("active");
 $('nav ul .menu-btn i').toggleClass("active");
 
 });
+
+$(window).on("load",function(){
+    $(".load").fadeOut("slow");
+});
+

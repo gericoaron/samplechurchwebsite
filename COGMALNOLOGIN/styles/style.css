@@ -10,6 +10,51 @@ font-family: 'Rubik', sans-serif; */
     padding: 0;
     box-sizing: border-box;
 }
+
+.load {
+    width:100%;
+    height:100vh;
+     background-color: white;
+  /*     margin:0px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      z-index: 999;
+  }
+  .load div {
+      width: 25px;
+      height: 25px;
+      background-color: #2374e1;
+      margin-left: 5px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      margin-top: calc(50px - 12.5px);
+      animation-name: loading;
+      animation-duration: 1.2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  }
+  .load-two {
+      animation-delay: 0.4s;
+  }
+  .load-three {
+      animation-delay: 0.8s;
+  }
+  @keyframes loading {
+      to {
+          opacity: 0.3;
+          transform: translateY(-25px);
+          -webkit-transform: translateY(-25px);
+          -moz-transform: translateY(-25px);
+          -ms-transform: translateY(-25px);
+          -o-transform: translateY(-25px);
+  }
+  
+  }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Rubik', sans-serif;
 }
@@ -97,7 +142,7 @@ header a{
 }
 header ul li a:hover{
     transition: all 0.3s ease;
-    color: #fab005;
+    color: #2374e1;
     transform: scale(1.20);
     cursor: pointer;
 
@@ -114,7 +159,7 @@ header ul li a:hover{
 
 } */
 header h2:hover{
-    color: #1478ca;
+    color: #2374e1;
     transition: all 0.3s ease;
     opacity: 1;
     transform: scale(1.05);
@@ -122,8 +167,7 @@ header h2:hover{
 }
 header img{
     height: 70px;
-    padding-right: 27rem;
-    padding-left: 3rem;
+    padding-right: 30rem;
     margin-top: 5px;
 
     
@@ -246,7 +290,7 @@ header .menu-btn i{
     }
     header .menu-btn i:hover{
         transition: all 0.3s ease;
-        color: #fab005;
+        color: #2374e1;
         cursor: pointer;
     }
     header nav ul{
@@ -280,7 +324,7 @@ header .menu-btn i{
 }
 /* home */
 #hero{
-            
+   
     height: 100vh;
     text-align: center;
     display: flex;
@@ -312,7 +356,7 @@ header .menu-btn i{
 }
 
 #hero a.btn:hover{
-    background-color: #fab005;
+    background-color: #2374e1;
     transition: all 0.3s ease ;
     transform: scale(1.05);
     color: #000;
@@ -679,7 +723,7 @@ footer{
     color: white;
     text-align: center;
     background: linear-gradient( #111);
-    padding: 30px 0;
+    padding:0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -703,7 +747,8 @@ footer p{
 }
 
 footer ul{
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: row;
 }
@@ -715,7 +760,7 @@ footer ul li a{
     cursor: pointer;
 }
 footer ul li a i:hover{
-    color: #f0f1f3;
+    color: #2374e1;
     transition: all 0.3s ease;
     transform: scale(1.35);
 }
